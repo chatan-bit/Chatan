@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentine Surprise 💖</title>
+    <style>
+        body {
+            background-color: #ffdde1;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding-top: 100px;
+        }
+
+        h2 {
+            color: #1e1417;
+        }
+
+        #message {
+            font-size: 24px;
+            margin-top: 30px;
+            color: #ae1f8a;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #ffffff;
+            color: rgba(18, 109, 213, 0.749);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #e6005c;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>💖 WILL YOU BE MY VALENTINE NATTY BAE 💖</h1>
+
+<button onclick="yesMessage()">YES ❤️</button>
+<button onclick="noMessage()">NO 💔</button>
+
+<div id="message"></div>
+
+<script>
+
+function yesMessage() {
+    var messages = [
+        "ITS A YES RIGHT ☀️❤️",
+        "BETTER BE A YES 💕",
+        "UKARAMBA DAVAUDZA 😊💖",
+        "BHANGU KANI ❤️",
+        "IWE MALLO 😘"
+    ];
+
+    var randomIndex = Math.floor(Math.random() * messages.length);
+    document.getElementById("message").innerHTML = messages[randomIndex];
+}
+
+function noMessage() {
+    var messages = [
+        "😭😭😭😭😭😭",
+        "I CAN'T BELIEVE YOU SAID NO! 💔",
+        "MANJE ININI NDOKUROVA 😂",
+        "HANDISI SHAMWARI YAKO KAININI 😭",
+        "HANDEI TINOITA YES TIONE 😏"
+    ];
+
+    var randomIndex = Math.floor(Math.random() * messages.length);
+    document.getElementById("message").innerHTML = messages[randomIndex];
+}
+
+</script>
+
+</body>
+</html>
